@@ -1,0 +1,8 @@
+-
+  name: test play
+  hosts: all
+  tasks:
+    - name: "print server ip"
+      debug:
+        msg: "Hello the ip is {{ ansible_ssh_host }}"
+
